@@ -2,19 +2,45 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Barra de Navegação</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Imagens IA</title>
   <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
 
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
     </ul>
   </nav>
+
+  <header>
+    <h1>Desperte Sua Criatividade com IA</h1>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <h2>Gerador de Imagens com Inteligência Artificial</h2>
+      <p>Descreva a imagem dos seus sonhos e veja a IA transformá-la em realidade</p>
+
+      <div class="input-container">
+        <textarea id="promptInput" placeholder="Ex: 'Um dragão vaporpunk voando sobre uma cidade futurista ao pôr do sol'"></textarea>
+        <button id="generateButton">Gerar Imagem</button>
+      </div>
+
+      <div class="image-display-container">
+        <p id="loadingMessage" class="hidden">Gerando imagem, aguarde...</p>
+        <p id="errorMessage" class="hidden error-message"></p>
+        <img id="generatedImage" class="generated-image hidden" src="#" alt="Imagem Gerada por IA">
+        <div id="imagePlaceholder" class="image-placeholder">Sua imagem aparecerá aqui</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/script.js"></script>
 
 </body>
 </html>
